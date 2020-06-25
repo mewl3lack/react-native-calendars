@@ -10,7 +10,7 @@ export default function styleConstructor(theme = {}) {
       flexDirection: 'row'
     },
     dayNum: {
-      fontSize: 26,
+      fontSize: 24,
       fontWeight: '200',
       fontFamily: appStyle.textDayFontFamily,
       color: appStyle.agendaDayNumColor
@@ -24,7 +24,7 @@ export default function styleConstructor(theme = {}) {
       marginTop: -5
     },
     day: {
-      width: 55,
+      width: 45,
       alignItems: 'center',
       justifyContent: 'flex-start',
       marginTop: 32
