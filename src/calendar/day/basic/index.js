@@ -61,6 +61,7 @@ class Day extends Component {
       selected,
       selectedColor,
       selectedTextColor,
+      selectedDotColor,//add on 06/08/2020
       activeOpacity,
       disableTouchEvent
     } = marking;
@@ -108,6 +109,7 @@ class Day extends Component {
           isMarked={marked}
           dotColor={dotColor}
           isSelected={selected}
+          selectedDotColor={selectedDotColor}
           isToday={isToday}
           isDisabled={isDisabled}
         />

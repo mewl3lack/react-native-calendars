@@ -92,7 +92,9 @@ export default class AgendaView extends Component {
     /** Called when the momentum scroll starts for the agenda list. **/
     onMomentumScrollBegin: PropTypes.func,
     /** Called when the momentum scroll stops for the agenda list. **/
-    onMomentumScrollEnd: PropTypes.func
+    onMomentumScrollEnd: PropTypes.func,
+    /** Enable paging calendar 06/08/2020 **/
+    pagingEnabled: PropTypes.bool
   };
 
   constructor(props) {
@@ -479,7 +481,7 @@ export default class AgendaView extends Component {
               displayLoadingIndicator={this.props.displayLoadingIndicator}
               showWeekNumbers={this.props.showWeekNumbers}
               horizontal={false}
-              pagingEnabled={true}
+              pagingEnabled={this.props.pagingEnabled}
             />
           </Animated.View>
           {knob}
